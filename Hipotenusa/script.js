@@ -6,7 +6,7 @@ function Calcular(){
     if(!isNaN(cOp) && !isNaN(cAd)){
         const hipotenusa = Math.sqrt(Math.pow( cOp, 2) + Math.pow(cAd, 2));
         
-        res.innerHTML+=`<br> A Soma Dos Quadrados de <strong>${ cOp}</strong> e <strong>${cAd}</strong> é igual a Hipotenusa<strong> ${hipotenusa.toFixed(2)}</strong>` 
+        res.innerHTML+=`<br> A Soma Dos Quadrados de <strong>${ cOp}</strong> e <strong>${cAd}</strong> é igual a Hipotenusa<strong> ${Math.round(hipotenusa)}</strong>` 
     }
     else{
         alert("Insira Dados")
