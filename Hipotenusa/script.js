@@ -4,9 +4,9 @@ function Calcular(){
     let res = document.querySelector(".res")
 
     if(!isNaN(cOp) && !isNaN(cAd)){
-        const hipotenusa = Math.sqrt(Math.pow( cOp, 2) + Math.pow(cAd, 2));
-        
-        res.innerHTML+=`<br> A Soma Dos Quadrados de <strong>${ cOp}</strong> e <strong>${cAd}</strong> é igual a Hipotenusa<strong> ${Math.round(hipotenusa)}</strong>` 
+        const hip = Math.sqrt(Math.pow( cOp, 2) + Math.pow(cAd, 2));
+        res.innerHTML="Calculando..."
+        res.innerHTML+=`<br> A Soma Dos Quadrados de <strong>${ cOp}</strong> e <strong>${cAd}</strong> é igual a Hipotenusa<strong> ${Math.round(hip)}</strong>` 
     }
     else{
         alert("Insira Dados")
@@ -16,5 +16,5 @@ function Calcular(){
 function Limpar(){
     document.getElementById('oposto').value=""
     document.getElementById('adjacente').value=""
-    document.querySelector('.res').innerHTML="Resposta:"
+    document.querySelector('.res').innerHTML="Resultado:"
 }
