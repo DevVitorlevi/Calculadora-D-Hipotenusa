@@ -13,14 +13,14 @@
     <div class="container">
         <form>
             <label> Oposto:
-                <input type="number" name="op" id="oposto" placeholder="Ex: 3">
+                <input type="number" name="op" id="oposto" required  placeholder="Ex: 4">
             </label>
             <label > Adjacente:
-                <input type="number" name="ad" id="adjacente" placeholder="Ex: 4"><br/>
+                <input type="number" name="ad" id="adjacente" required placeholder="Ex: 3"><br/>
             </label>
+            <input type="button" value="Calcular"id="button">
+            <input type="button" value="Limpar" onclick="Limpar()" id="button">
         </form>
-        <button onclick="Calcular()">Calcular</button>
-        <button onclick="Limpar()">Limpar</button>
         <div class="res"> Resultado:</div>
     </div>
     
